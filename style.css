@@ -1,0 +1,52 @@
+*{  margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+#Front-page{
+   
+    background-color: #0E6FFC;
+    height: 100vh;  
+}
+
+.container h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 23px;
+    padding: 13px;
+    color: white;
+    margin: 4px;
+    background-size: 200% 100%;
+    
+    position: absolute;
+    animation: mymove 2s infinite;
+    text-shadow: 3px 3px #FF0000;
+    border-radius: 8px;
+     
+}
+.container h1 a{
+    color: white;
+
+}
+.container h1:hover{
+    background-position: left bottom;
+    color: blue;
+    border: 2px solid black;
+    transition: all .3s cubic-bezier(0.39,-0.22, 1, 0.19);
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    text-shadow: 5px 5px white;
+    cursor: pointer;
+}
+@keyframes mymove {
+    from {background-color: rgb(0, 0, 0);}
+    to {background-color: rgb(232, 232, 180);}
+}
+
+
